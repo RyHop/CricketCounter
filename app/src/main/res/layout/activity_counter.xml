@@ -4,9 +4,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/primaryColor"
+
     tools:context="com.example.ryan.cricketcounter.Counter">
 
     <TextView
+
         android:id="@+id/headerText"
         android:gravity="center"
         android:layout_width="wrap_content"
@@ -15,10 +18,13 @@
         android:layout_marginTop="10dp"
         android:padding="10dp"
         android:text="@string/header"
+        android:textColor="@color/secondaryLightColor"
         android:textSize="20sp"
+
         />
 
     <Button
+        android:background="@color/primaryColor"
         android:layout_alignParentRight="true"
         android:layout_width="100dp"
         android:layout_height="50dp"
@@ -29,6 +35,7 @@
         android:textSize="13sp"/>
 
     <LinearLayout
+        android:background="@color/secondaryLightColor"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@+id/headerText"
@@ -41,6 +48,7 @@
             android:layout_weight="1">
 
             <TextView
+                android:background="@color/secondaryDarkColor"
                 android:id="@+id/teamAText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -49,9 +57,11 @@
                 android:paddingLeft="15dp"
                 android:paddingBottom="2dp"
                 android:text="@string/teamATitle"
+                android:textColor="@color/secondaryTextColor"
                 android:textSize="17sp"/>
 
             <TextView
+                android:background="@color/secondaryLightColor"
                 android:id="@+id/scoreTeamA"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -59,11 +69,13 @@
                 android:layout_centerHorizontal="true"
                 android:padding="35dp"
                 android:text="0"
+                android:textColor="@color/secondaryTextColor"
+
                 android:textSize="35dp"/>
 
 
             <Button
-
+                android:background="@color/secondaryDarkColor"
                 android:id="@+id/Fourer"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -73,6 +85,8 @@
                 android:text="@string/fourerText" />
 
             <Button
+                android:background="@color/secondaryDarkColor"
+
                 android:id="@+id/Sixer"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -83,6 +97,8 @@
                 android:text="@string/sixerText" />
 
             <Button
+                android:background="@color/secondaryDarkColor"
+
                 android:id="@+id/Run"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -106,6 +122,7 @@
             android:layout_weight="1">
 
             <TextView
+                android:background="@color/secondaryDarkColor"
                 android:id="@+id/teamBText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -115,6 +132,7 @@
                 android:paddingBottom="2dp"
                 android:layout_marginTop="4dp"
                 android:text="@string/teamBTitle"
+                android:textColor="@color/secondaryTextColor"
                 android:textSize="17sp"/>
 
             <TextView
@@ -125,10 +143,14 @@
                 android:layout_centerHorizontal="true"
                 android:padding="35dp"
                 android:text="0"
+                android:textColor="@color/secondaryTextColor"
+
                 android:textSize="35sp"/>
 
 
             <Button
+                android:background="@color/secondaryDarkColor"
+
                 android:id="@+id/FourerB"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -138,6 +160,8 @@
                 android:text="@string/fourerText" />
 
             <Button
+                android:background="@color/secondaryDarkColor"
+
                 android:id="@+id/SixerB"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -148,6 +172,8 @@
                 android:text="@string/sixerText" />
 
             <Button
+                android:background="@color/secondaryDarkColor"
+
                 android:id="@+id/RunB"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
