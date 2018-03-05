@@ -2,4 +2,9 @@
     <string name="app_name">CricketCounter</string>
     <string name="header">Criquet\n24 Hour Match</string>
     <string name="resetText">Reset Match</string>
+    <string name="sixerText">Sixer</string>
+    <string name="fourerText">Fourer</string>
+    <string name="Run">Run</string>
+    <string name="teamATitle">Team A</string>
+    <string name="teamBTitle">Team B</string>
 </resources>

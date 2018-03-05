@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -11,20 +10,22 @@
         android:id="@+id/headerText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/header"
         android:layout_centerHorizontal="true"
-         />
+        android:text="@string/header" />
+
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_toRightOf="@+id/headerText"
-        android:text="@string/resetText"/>
+        android:onClick="resetMatch"
+        android:text="@string/resetText" />
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_below="@+id/headerText">
+        android:layout_height="match_parent"
+        android:layout_below="@+id/headerText"
+        android:layout_margin="14dp"
+        android:orientation="vertical">
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -32,21 +33,45 @@
             android:layout_weight="1">
 
             <TextView
+                android:id="@+id/teamAText"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="@string/teamATitle" />
 
+            <TextView
+                android:id="@+id/scoreTeamA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/teamAText"
+                android:layout_centerHorizontal="true"
+                android:text="0" />
+
+
+            <Button
+                android:id="@+id/Fourer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/scoreTeamA"
+                android:layout_centerHorizontal="true"
+                android:onClick="fourer"
+                android:text="@string/fourerText" />
+
+            <Button
+                android:id="@+id/Sixer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/Fourer"
+                android:onClick="sixer"
+                android:text="@string/sixerText" />
+
+            <Button
+                android:id="@+id/Run"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/Fourer"
+                android:onClick="run"
+                android:text="@string/Run" />
 
 
         </RelativeLayout>
@@ -57,27 +82,48 @@
             android:layout_weight="1">
 
             <TextView
+                android:id="@+id/teamBText"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="@string/teamBTitle" />
+
             <TextView
+                android:id="@+id/scoreTeamB"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/teamBText"
+                android:layout_centerHorizontal="true"
+                android:text="0" />
 
 
+            <Button
+                android:id="@+id/FourerB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/scoreTeamB"
+                android:layout_centerHorizontal="true"
+                android:onClick="fourerB"
+                android:text="@string/fourerText" />
 
+            <Button
+                android:id="@+id/SixerB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/FourerB"
+                android:onClick="sixerB"
+                android:text="@string/sixerText" />
+
+            <Button
+                android:id="@+id/RunB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/FourerB"
+                android:onClick="runB"
+                android:text="@string/Run" />
 
 
         </RelativeLayout>
-
 
 
     </LinearLayout>
