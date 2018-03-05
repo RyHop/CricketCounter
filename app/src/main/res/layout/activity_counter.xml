@@ -8,17 +8,25 @@
 
     <TextView
         android:id="@+id/headerText"
+        android:gravity="center"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:text="@string/header" />
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:text="@string/header"
+        android:textSize="20sp"
+        />
 
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_toRightOf="@+id/headerText"
+        android:layout_alignParentRight="true"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
         android:onClick="resetMatch"
-        android:text="@string/resetText" />
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="5dp"
+        android:text="@string/resetText"
+        android:textSize="13sp"/>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -37,7 +45,11 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
-                android:text="@string/teamATitle" />
+                android:paddingRight="15dp"
+                android:paddingLeft="15dp"
+                android:paddingBottom="2dp"
+                android:text="@string/teamATitle"
+                android:textSize="17sp"/>
 
             <TextView
                 android:id="@+id/scoreTeamA"
@@ -45,10 +57,13 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/teamAText"
                 android:layout_centerHorizontal="true"
-                android:text="0" />
+                android:padding="35dp"
+                android:text="0"
+                android:textSize="35dp"/>
 
 
             <Button
+
                 android:id="@+id/Fourer"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -63,6 +78,8 @@
                 android:layout_height="wrap_content"
                 android:layout_toLeftOf="@+id/Fourer"
                 android:onClick="sixer"
+                android:layout_marginTop="55dp"
+                android:layout_marginRight="5dp"
                 android:text="@string/sixerText" />
 
             <Button
@@ -71,8 +88,15 @@
                 android:layout_height="wrap_content"
                 android:layout_toRightOf="@+id/Fourer"
                 android:onClick="run"
+                android:layout_marginTop="55dp"
+                android:layout_marginLeft="5dp"
                 android:text="@string/Run" />
 
+            <view
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                />
 
         </RelativeLayout>
 
@@ -86,7 +110,12 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
-                android:text="@string/teamBTitle" />
+                android:paddingRight="15dp"
+                android:paddingLeft="15dp"
+                android:paddingBottom="2dp"
+                android:layout_marginTop="4dp"
+                android:text="@string/teamBTitle"
+                android:textSize="17sp"/>
 
             <TextView
                 android:id="@+id/scoreTeamB"
@@ -94,7 +123,9 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/teamBText"
                 android:layout_centerHorizontal="true"
-                android:text="0" />
+                android:padding="35dp"
+                android:text="0"
+                android:textSize="35sp"/>
 
 
             <Button
@@ -112,6 +143,8 @@
                 android:layout_height="wrap_content"
                 android:layout_toLeftOf="@+id/FourerB"
                 android:onClick="sixerB"
+                android:layout_marginTop="55dp"
+                android:layout_marginRight="5dp"
                 android:text="@string/sixerText" />
 
             <Button
@@ -120,6 +153,8 @@
                 android:layout_height="wrap_content"
                 android:layout_toRightOf="@+id/FourerB"
                 android:onClick="runB"
+                android:layout_marginTop="55dp"
+                android:layout_marginLeft="5dp"
                 android:text="@string/Run" />
 
 
