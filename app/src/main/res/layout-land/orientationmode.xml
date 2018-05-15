@@ -36,8 +36,6 @@
         android:textSize="13sp" />
 
 
-
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -70,9 +68,10 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/teamAText"
-                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginStart="15dp"
                 android:background="@color/secondaryLightColor"
-                android:padding="35dp"
+                android:padding="20dp"
                 android:text="0"
                 android:textColor="@color/secondaryTextColor"
                 android:textSize="35dp" />
@@ -82,8 +81,10 @@
                 android:id="@+id/Fourer"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/scoreTeamA"
-                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/teamAText"
+                android:layout_marginLeft="45dp"
+                android:layout_marginTop="30dp"
+                android:layout_toRightOf="@id/Sixer"
                 android:background="@color/secondaryDarkColor"
                 android:onClick="fourer"
                 android:text="@string/fourerText" />
@@ -92,9 +93,10 @@
                 android:id="@+id/Sixer"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
                 android:layout_marginRight="5dp"
                 android:layout_marginTop="55dp"
-                android:layout_toLeftOf="@+id/Fourer"
+                android:layout_toRightOf="@id/scoreTeamA"
                 android:background="@color/secondaryDarkColor"
                 android:onClick="sixer"
                 android:text="@string/sixerText" />
@@ -103,7 +105,7 @@
                 android:id="@+id/Run"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="5dp"
+                android:layout_marginLeft="45dp"
                 android:layout_marginTop="55dp"
                 android:layout_toRightOf="@+id/Fourer"
                 android:background="@color/secondaryDarkColor"
@@ -143,33 +145,34 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/teamBText"
-                android:layout_centerHorizontal="true"
-                android:padding="35dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginStart="15dp"
+                android:padding="20dp"
                 android:text="0"
                 android:textColor="@color/secondaryTextColor"
-
                 android:textSize="35sp" />
 
 
             <Button
                 android:id="@+id/FourerB"
-
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/scoreTeamB"
-                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/teamBText"
+                android:layout_marginLeft="50dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="25dp"
+                android:layout_toRightOf="@id/SixerB"
                 android:background="@color/secondaryDarkColor"
                 android:onClick="fourerB"
                 android:text="@string/fourerText" />
 
             <Button
                 android:id="@+id/SixerB"
-
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginRight="5dp"
+                android:layout_marginLeft="30dp"
                 android:layout_marginTop="55dp"
-                android:layout_toLeftOf="@+id/FourerB"
+                android:layout_toRightOf="@id/scoreTeamB"
                 android:background="@color/secondaryDarkColor"
                 android:onClick="sixerB"
                 android:text="@string/sixerText" />
@@ -178,7 +181,8 @@
                 android:id="@+id/RunB"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="5dp"
+                android:layout_marginLeft="45dp"
+                android:layout_marginStart="45dp"
                 android:layout_marginTop="55dp"
                 android:layout_toRightOf="@+id/FourerB"
                 android:background="@color/secondaryDarkColor"
@@ -190,7 +194,6 @@
 
 
     </LinearLayout>
-
 
 
 </RelativeLayout>
